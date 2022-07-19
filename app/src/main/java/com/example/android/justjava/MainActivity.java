@@ -7,8 +7,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.NumberFormat;
-
 /**
  * This app displays an order form to order coffee.
  */
@@ -49,11 +47,7 @@ int quantity=0;
         findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-    private void displayPrice(int number){
-        TextView priceTextView = (TextView)
-        findViewById(R.id.Price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
-    }
+
     private void displayMessage(String message) {
         TextView priceTextView = (TextView) findViewById(R.id.Price_text_view);
         priceTextView.setText(message);
