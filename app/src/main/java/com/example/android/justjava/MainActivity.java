@@ -75,6 +75,7 @@ int quantity=1;
         quantityTextView.setText("" + number);
     }
 
+<<<<<<< HEAD
 
     private int calculatePrice(boolean addWhippedCream, boolean addChocolate){
         int price = quantity * 5;
@@ -89,6 +90,11 @@ int quantity=1;
             price = quantity*8;
         }
         return price;
+=======
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.Price_text_view);
+        priceTextView.setText(message);
+>>>>>>> db0130e2c080a34fb6d155c9c83379970b55fa07
     }
 
     private String createOrderSummary(boolean addWhippedCream, boolean addChocolate, String Name){
