@@ -2,36 +2,17 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-<<<<<<< HEAD
-    android:layout_height="match_parent">
-=======
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:forceDarkAllowed="true">
+    android:forceDarkAllowed="true" >
 
-    <TextView
-        android:id="@+id/quantity_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Quantity"
-        android:textAllCaps="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
->>>>>>> db0130e2c080a34fb6d155c9c83379970b55fa07
     <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity"
-        android:forceDarkAllowed="true">
+        android:orientation="vertical">
+
         <EditText
             android:id="@+id/Name"
             android:layout_width="match_parent"
@@ -47,11 +28,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:text="Toppings"
-            android:textAllCaps="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textAllCaps="true" />
 
         <CheckBox
             android:id="@+id/whipped_cream_checkbox"
@@ -79,18 +56,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Quantity"
-            android:textAllCaps="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textAllCaps="true"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context=".MainActivity">
+            android:orientation="horizontal">
+
 
             <Button
                 android:id="@+id/order_increment"
@@ -110,11 +83,7 @@
                 android:layout_marginBottom="16sp"
                 android:text="1"
                 android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/order_decrement"
@@ -124,9 +93,8 @@
                 android:height="48dp"
                 android:onClick="decrement"
                 android:text="-" />
+
         </LinearLayout>
-
-
 
         <Button
             android:id="@+id/order_button"
